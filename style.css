@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+}
+
+body{
+    background: white;
+    height: 100vh;
+    place-content: center;
+}
+
+
+.wszystko {
+    width: 800px;
+    margin: 0 auto;
+    background: lightgrey;
+}
+
+.tytul {
+    display: grid;
+    place-items: center;
+}
+
+.pytanie {
+ 
+    display: flex;
+    flex-direction: column;
+    background: rgb(145, 145, 162);
+    margin-bottom:10px;
+    padding: 20px;
+    
+}
+
+.pytanie-tytul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+   
+}
+
+.pytanie-tekst {
+    margin-top: 20px;
+    padding-top: 5px;
+    border-top: 1px solid black;  
+}
+
+
+/* Ukrywanie tekstu*/
+.pytanie-tekst {
+    display: none;
+}
+
+.show-text .pytanie-tekst {
+    display: block;
+  }
+
+
+/* Butony */
+
+.question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--clr-gold);
+    transition: var(--transition);
+  }
+
+
+.pytanie-btn:hover {
+    transform: rotate(90deg);
+  }
+
+  .minus-icon {
+    display: none;
+  }
+
+  .show-text .minus-icon {
+    display: inline;
+  }
+
+  .show-text .plus-icon {
+    display: none;
+  }
