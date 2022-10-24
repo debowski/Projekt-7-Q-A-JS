@@ -8,13 +8,13 @@ pytania.forEach(function(pytanie) {
 
   btn.addEventListener("click", function () {
      console.log(pytanie);
-
+/*
     pytania.forEach(function (item) {
       if (item !== pytanie) {
         item.classList.remove("show-text");
       }
     });
-
+*/
     pytanie.classList.toggle("show-text");
   });
 });
